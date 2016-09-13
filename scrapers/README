@@ -1,0 +1,4 @@
+
+//TODO explain postgresql installation and setup
+//TODO explain postgis installation and setup
+CREATE EXTENSION postgis;
