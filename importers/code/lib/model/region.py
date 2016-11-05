@@ -4,6 +4,7 @@ import json
 
 
 ZIP = u"Zip"
+POSTAL_AREA = u"PostalArea"
 PLACE = u"Place"
 MUNICIPALITY = u"Municipality"
 PROVINCE = u"Province"
