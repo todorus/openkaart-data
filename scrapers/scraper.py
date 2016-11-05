@@ -26,9 +26,7 @@ class Scraper(object):
         self.close()
 
     def before(self):
-        self.conn = psycopg2.connect("dbname=openkaart_development user=scraper")
-        self.conn.set_client_encoding("UTF8")
-        self.cur = self.conn.cursor()
+        logging.warning("WARNING: before not implemented")
 
     def run(self):
         page = 0
@@ -72,8 +70,7 @@ class Scraper(object):
         raise NotImplementedError("Subclasses should implement this!")
 
     def close(self):
-        self.cur.close()
-        self.conn.close()
+        logging.warning("WARNING: close not implemented")
 
     def addTimeMeasurement(self, seconds):
         self.timeSlot = (self.timeSlot + 1) % 5
