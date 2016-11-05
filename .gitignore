@@ -15,7 +15,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -61,3 +60,9 @@ target/
 postalcode-tabel/*.zip
 postalcode-tabel/*.csv
 postalcode-tabel/*.json
+
+#configs
+config.py
+
+#data
+*.geo.json
