@@ -106,7 +106,7 @@ class WFSScraper(Scraper):
 
         logging.info('fetching: %s' % url)
         response = requests.get(url, timeout=60)
-        content = response.text
+        content = response.text.encode("utf-8")
         return content
 
     def write(self, json_string, page):
