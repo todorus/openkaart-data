@@ -46,6 +46,14 @@ def match(graph, definition):
     return result
 
 
+def find(graph, definition):
+    results = match(graph, definition)
+    if len(results) == 0:
+        return None
+    else:
+        return results[0]
+
+
 def search(graph, query=None, limit=10, page=1):
     skip = (page - 1) * limit
 

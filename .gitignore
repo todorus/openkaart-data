@@ -56,13 +56,11 @@ docs/_build/
 # PyBuilder
 target/
 
-#postalcode-tabel
-postalcode-tabel/*.zip
-postalcode-tabel/*.csv
-postalcode-tabel/*.json
-
 #configs
 config.py
 
 #data
+*.zip
+*.csv
+*.json
 *.geo.json
